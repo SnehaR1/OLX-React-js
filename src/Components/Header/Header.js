@@ -12,7 +12,7 @@ import { db } from '../../firebase';
 
 function Header() {
   const { user, logOut } = UserAuth()
-  const [lang, setLang] = useState('')
+  const [lang, setLang] = useState('English')
   const [username, setUsername] = useState('');
   const navigate = useNavigate()
   const handleLogout = async () => {
